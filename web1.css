@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman';
+    scroll-behavior: smooth;
+}
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(240, 237, 237, 0.75), rgba(240, 237, 237, 0.75)), url(asset/img/latar.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.navbar{
+    width: 95%;
+    margin: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between; 
+    background-color: white;
+    position: sticky;
+    top: 0;
+}
+
+.hr{
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.logo{
+    width: 80px;
+    height: 70px;
+    cursor: pointer;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    padding: 0 2rem;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 2px;
+    width: 0;
+    background: #1e6091;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+.tombol{
+    background-color: #1e6091;
+    height: 38px;
+    line-height: 42px;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0 10px 0 10px;
+    font-size: 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.konten{
+    width: 100%;
+    position: absolute;
+    top: 70%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: black;
+}
+.konten h1{
+    font-size: 65px;
+    margin-top: 80px;
+    color: #2d343a;
+}
+.konten p{
+    color: #5d7181;
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px; 
+    font-size: 30px;  
+}
+.btn{
+    padding: 50px 0;
+}
+button{
+    font-size: 20px;
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #4c857f;
+    background: transparent;
+    color: #2d343a;
+    position: relative;
+    overflow: hidden;
+}
+button span{
+    background: #4c857f;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover span{
+    width: 100%;
+}
+button:hover{
+    border: none;
+}
+
+.about {
+    margin: auto;
+    padding: 50px 0;
+    text-align: center;
+}
+.about h2{
+    color: rgb(87, 69, 69);
+    font-size: 50px;
+}
+.about h3{
+    color: rgb(72, 69, 69);
+    font-size: 27px;
+}
+.about p{
+    color: rgb(72, 69, 69);
+    font-size: 1rem;
+    line-height: 15px;
+    padding: 15px 0;
+}
+.kartu p{
+    color: white;
+}
+.a{
+    padding: 50px 0 20px 0;
+}
+
+.kartu{
+    width: 180px;
+    height: 120px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+}
+.kartu1{
+    background-image: url(asset/img/Inggris.jpg);
+}
+.kartu2{
+    background-image: url(asset/img/Korea\ Selatan.jpg);
+}
+.kartu3{
+    background-image: url(asset/img/Jerman.jpg);
+}
+.kartu4{
+    background-image: url(asset/img/Jepang.jpg);
+}
+.kartu5{
+    background-image: url(asset/img/prancis.jpg);
+}
+.kartu6{
+    background-image: url(asset/img/cina.jpg) ;
+}
+.kartu7{
+    background-image: url(asset/img/Rusia.jpg) ;
+}
+.kartu8{
+    background-image: url(asset/img/Italia.jpg) ;
+}
+.kartu9{
+    background-image: url(asset/img/Arab.jpg) ;
+}
+.kartu10{
+    background-image: url(asset/img/Thailand.jpg) ;
+}
+.kartu11{
+    background-image: url(asset/img/spanyol.jpg) ;
+}
+.kartu12{
+    background-image: url(asset/img/Turki.jpg);
+}
+.kartu:hover{
+    transform: translateY(-10px);
+}
+h5{
+    color: #fff;
+    text-shadow: 0 0 5px #999;
+    font-size: 30px;
+}
+.kartu p{
+    text-shadow: 0 0 15px #000;
+    font-size: 10px;
+}
+.gambar{
+    width: 80px;
+    height: 80px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+}
+.gambar1{
+    background-image: url(asset/img/Facebook.png) ;
+}
+.gambar2{
+    background-image: url(asset/img/Wa.png);
+}
+.gambar3{
+    background-image: url(asset/img/Instagram.png);
+}
